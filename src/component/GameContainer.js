@@ -1,5 +1,9 @@
 import React, { Fragment, useState, useEffect } from 'react';
 
+import Figure from './Figure';
+import WrongLetters from './WrongLetters';
+import Word from './Word';
+
 const GameContainer = () => {
   let page = (
     <div className='outer'>
@@ -22,15 +26,23 @@ const GameContainer = () => {
     </div>
   );
 
-  let gamePage = <Fragment></Fragment>;
+  let gamePage = (
+    <Fragment>
+      <div className='game1'>
+        <Figure />
+        <WrongLetters />
+      </div>
+      <Word />
+    </Fragment>
+  );
 
   const [load, doneLoad] = useState(page);
 
   useEffect(() => {
     setTimeout(() => {
-      doneLoad(<div className='gameContainer'>done loading</div>);
+      doneLoad(<div className='gameContainer'>{gamePage}</div>);
     }, 1000);
-  }, []);
+  });
 
   return <Fragment>{load}</Fragment>;
 };

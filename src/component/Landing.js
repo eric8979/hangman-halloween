@@ -6,11 +6,13 @@ const Header = () => {
     <div className='landing'>
       <div className='header'>
         <h1>🎃 HangMan 🎃</h1>
-        <h2>Find the hidden word!</h2>
+        <h2>- halloween edition -</h2>
       </div>
 
       <div className='start-button'>
-        <Link to='/game'>Start!</Link>
+        <Link className='button' to='/game'>
+          Start!
+        </Link>
       </div>
     </div>
   );

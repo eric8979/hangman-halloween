@@ -20,11 +20,25 @@
   align-items: center;
   text-align: center;
 }
+.header > h1 {
+  font-size: 4rem;
+}
 .start-button {
+  position: relative;
+  top: 30%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  z-index: 1;
+  align-items: flex-start;
+  text-align: center;
+}
+.button {
+  color: #85E21F;
+  text-decoration: none;
+  font-size: 5rem;
+}
+.button:hover {
+  font-size: 5.5rem;
+  transform: rotate(-15deg);
 }
 
 .gameContainer {
@@ -45,5 +59,8 @@
   .landing {
     background-image: url(./img/background.jpg);
     background-size: cover;
+  }
+  .header > h1 {
+    font-size: 3rem;
   }
 }

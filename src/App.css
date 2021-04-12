@@ -1,14 +1,18 @@
 * {
   font-family: 'New Tegomin', serif;
   color: #F75F1C;
-  background-image: url(./img/background.jpg);
+  margin: 0;
+}
+
+.landing {
+  position: absolute;
+  top: 0;
+  bottom: 0; 
+  width: 100%;
+  background-image: url(./img/background2.jpg);
   background-size: cover;
+  background-position: center;
 }
-
-.App {
-  
-}
-
 .header {
   display: flex;
   justify-content: center;
@@ -16,7 +20,30 @@
   align-items: center;
   text-align: center;
 }
-.header > h1 {
-  margin: 0;
-  font-size: 2.5rem;
+.start-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.gameContainer {
+  height: 100%;
+  width: 100%;
+  background-image: url(./img/background2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----------------------------------------------- */
+
+@media (max-width: 768px) {
+  .gameContainer {
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+  }
+  .landing {
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+  }
 }

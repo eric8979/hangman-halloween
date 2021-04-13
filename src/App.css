@@ -356,10 +356,9 @@ animation-delay: 2s;
   align-items: center;
 }
 .figure-container {
-  border: 1px solid red;
   fill: transparent;
-  stroke: #85E21F;
-  stroke-width: 4px;
+  stroke: #fff;
+  stroke-width: 5px;
   stroke-linecap: round;
 }
 .figure-part {
@@ -376,22 +375,42 @@ animation-delay: 2s;
 .wrong-letters-container span {
   font-size: 24px;
 }
-.word {
+.word-box {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  right: 0;
   position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 15%;
+}
+.word {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.word-btn {
+  width: 8rem;
+  height: 5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #FF9A00;
+  color: #881EE4;
+  font-size: 3rem;
+  text-align: center;
+}
+.word-btn:hover {
+  background-color: #F75F1C;
 }
 .letter {
-  border-bottom: 3px solid #2980b9;
+  border-bottom: 3px solid #85E21F;
+  color: #85E21F;
+  width: 2rem;
   display: inline-flex;
-  font-size: 30px;
+  font-size: 4rem;
   align-items: center;
   justify-content: center;
-  margin: 0 3px;
-  height: 50px;
-  width: 20px;
+  margin: 0 0.3rem 0 0.3rem;
 }
 /* ----------------------------------------------- */
 
@@ -409,5 +428,10 @@ animation-delay: 2s;
   }
   .header > h1 {
     font-size: 3rem;
+  }
+  .word-btn {
+    width: 6rem;
+    height: 3rem;
+    font-size: 2rem;
   }
 }

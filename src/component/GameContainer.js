@@ -1,31 +1,11 @@
 import React, { Fragment, useState, useEffect } from 'react';
 
 import Figure from './Figure';
+import Loading from './Loading';
 import WrongLetters from './WrongLetters';
 import Word from './Word';
 
 const GameContainer = () => {
-  let page = (
-    <div className='outer'>
-      <div id='container'>
-        <div id='spooky'>
-          <div id='body'>
-            <div id='eyes'></div>
-            <div id='mouth'></div>
-            <div id='feet'>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-        <div id='shadow'></div>
-      </div>
-      <br />
-      <span className='loading'>Loading ...</span>
-    </div>
-  );
-
   let gamePage = (
     <Fragment>
       <div className='game1'>
@@ -36,11 +16,11 @@ const GameContainer = () => {
     </Fragment>
   );
 
-  const [load, doneLoad] = useState(page);
+  const [load, setLoad] = useState(<Loading />);
 
   useEffect(() => {
     setTimeout(() => {
-      doneLoad(<div className='gameContainer'>{gamePage}</div>);
+      setLoad(<div className='gameContainer'>{gamePage}</div>);
     }, 1000);
   });
 

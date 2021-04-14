@@ -352,7 +352,8 @@ animation-delay: 2s;
 }
 .game1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 .figure-container {
@@ -386,21 +387,19 @@ animation-delay: 2s;
   bottom: 15%;
 }
 .word {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   font-size: 3rem;
   margin-bottom: 1.5rem;
 }
 .word-btn {
-  width: 8rem;
-  height: 5rem;
-  border: none;
-  border-radius: 10px;
-  background-color: #FF9A00;
   color: #881EE4;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 .word-btn:hover {
-  background-color: #F75F1C;
+  color: #FF9A00;
 }
 .letter {
   border-bottom: 3px solid #85E21F;
@@ -411,6 +410,7 @@ animation-delay: 2s;
   align-items: center;
   justify-content: center;
   margin: 0 0.3rem 0 0.3rem;
+  display: hide;
 }
 /* ----------------------------------------------- */
 
@@ -429,9 +429,19 @@ animation-delay: 2s;
   .header > h1 {
     font-size: 3rem;
   }
+  .letter {
+    font-size: 100%;
+  }
+  .word {
+    width: 100%;
+  }
+  .word-box {
+    bottom: 8%;
+  }
   .word-btn {
-    width: 6rem;
-    height: 3rem;
-    font-size: 2rem;
+    font-size: 100%;
+  }
+  .word-btn {
+    font-size: 3rem;
   }
 }

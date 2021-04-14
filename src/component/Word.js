@@ -32,9 +32,9 @@ const Word = () => {
   return (
     <div className='word-box'>
       <div className='word'>{chars}</div>
-      <button className='word-btn' onClick={() => onClick()}>
+      <div className='word-btn' onClick={() => onClick()}>
         Pick!
-      </button>
+      </div>
     </div>
   );
 };

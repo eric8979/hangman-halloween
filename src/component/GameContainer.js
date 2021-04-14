@@ -9,8 +9,8 @@ const GameContainer = () => {
   let gamePage = (
     <Fragment>
       <div className='game1'>
-        <Figure />
         <WrongLetters />
+        <Figure />
       </div>
       <Word />
     </Fragment>

@@ -20,11 +20,17 @@ const GameContainer = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setLoad(<div className='gameContainer'>{gamePage}</div>);
+      setLoad(<Fragment>{gamePage}</Fragment>);
     }, 1000);
   });
 
-  return <Fragment>{load}</Fragment>;
+  return (
+    <Fragment>
+      <div className='landing'></div>
+      <div className='lightning flashit'></div>
+      {load}
+    </Fragment>
+  );
 };
 
 export default GameContainer;

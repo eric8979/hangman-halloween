@@ -415,10 +415,6 @@ animation-delay: 2s;
 /* ----------------------------------------------- */
 
 @media (max-width: 768px) {
-  .gameContainer {
-    background-image: url(./img/background.jpg);
-    background-size: cover;
-  }
   .landing {
     background-image: url(./img/background.jpg);
     background-size: cover;

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Landing = () => {
   return (
     <Fragment>
       <div className='landing'></div>
@@ -30,4 +30,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Landing;

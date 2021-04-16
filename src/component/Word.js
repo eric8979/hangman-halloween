@@ -24,7 +24,7 @@ const Word = () => {
   const chars = charArr.map((char, ind) => {
     return (
       <div className='letter' key={ind}>
-        {char}
+        <span className='char'>{char}</span>
       </div>
     );
   });

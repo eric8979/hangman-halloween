@@ -357,24 +357,20 @@ animation-delay: 2s;
   align-items: center;
 }
 .figure-container {
-  fill: transparent;
-  stroke: #fff;
-  stroke-width: 5px;
-  stroke-linecap: round;
-}
-.figure-part {
-  display: none;
+  display: flex;
+  position: absolute;
+  top: 35%;
+  font-size: 5rem;
 }
 .wrong-letters-container {
   display: flex;
-  flex-direction: column;
-  text-align: right;
+  position: absolute;
+  top: 10%;
+  text-align: center;
 }
-.wrong-letters-container p {
-  margin: 0 0 5px;
-}
-.wrong-letters-container span {
-  font-size: 24px;
+.wrong-letters {
+  color: #FF9A00;
+  font-size: 3.5rem;
 }
 .word-box {
   display: flex;
@@ -412,6 +408,12 @@ animation-delay: 2s;
   margin: 0 0.3rem 0 0.3rem;
   display: hide;
 }
+.char {
+  display: none;
+}
+.player {
+  display: flex;
+}
 /* ----------------------------------------------- */
 
 @media (max-width: 768px) {
@@ -438,6 +440,13 @@ animation-delay: 2s;
     font-size: 100%;
   }
   .word-btn {
+    font-size: 3rem;
+  }
+  .wrong-letters {
+    font-size: 2rem;
+  }
+  .figure-container {
+    top: 35%;
     font-size: 3rem;
   }
 }
